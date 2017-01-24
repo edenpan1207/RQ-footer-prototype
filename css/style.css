@@ -1,0 +1,77 @@
+/* header 跟　content 可以先跳過 */
+
+.header {
+	border-bottom: 1px solid rgba(192, 192, 192, 0.8);
+	height: 60px;
+}
+.header h1 {
+	margin: 0;
+	margin-top: 8px;
+}
+
+.content {
+	padding-top: 225px;
+	padding-bottom: 225px;
+}
+
+
+/* footer 我把它包在wrap裡面*/
+.footer {
+	min-height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    position: relative;
+}
+
+/* 左側RQ文字簡介 */
+.footer-left {
+	width: 50%;
+	float: left;
+}
+.footer-left h3 {
+	color: #37761D;
+	font-style: italic;
+	font-weight: bold;
+}
+.footer-left p {
+	font-size: 15px;
+}
+
+/* 右側icon與copyright */
+.footer-right {
+	float: right;
+}
+
+.image-flow {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.image-flow a {
+	padding-left: 16px;
+}
+
+.image-flow a img:hover {
+	border-radius: 50%;
+	box-shadow: 0 5px 8px gray;
+}
+
+/* 點選至頂 */
+.scroll-top {
+	position: absolute;
+	top: -15px;
+	right: 30px;
+}
+
+/* 行動裝置排版 */
+@media(max-width: 568px) {
+	.footer-left {
+		float: none;
+		width: 100%;
+		padding-left: 20px;
+	}
+	.footer-right {
+		float: none;
+		padding-left: 20px;	
+	}
+}
